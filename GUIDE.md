@@ -168,3 +168,35 @@ be remade to match — ask David.
 | The editor | https://github.dev/dhahn402/sophiavarner |
 | History and undo | https://github.com/dhahn402/sophiavarner/commits/main |
 | Your agency | https://shorelinesocials.net |
+
+---
+
+## Photos — status and the next upgrade (2026-08-17)
+
+**Live now:** `sophia-hero.jpg` (hero split) and `sophia-portrait.jpg`
+(editorial band). Both supplied by David, approved by Sophia for this use,
+optimised from 1.9MB/736KB down to 192KB/228KB.
+
+📌 **These are personal selfies, not brand photography** — one taken in a car,
+one Facetuned, both bare-shouldered. They carry personality, which is what
+David asked for. What they do NOT carry is "I will make your business look
+professional," and that is what she sells to Keller Williams agents, sailing
+charters and Chamber members.
+
+⭐ **THE NEXT UPGRADE — David agreed, "get better pics later":** one hour with
+a real photographer. Her working — at a laptop, on a shoot, sitting with a
+client, shooting content on a phone. Same warmth, plus credibility. Swap the
+files in place (`sophia-hero.jpg`, `sophia-portrait.jpg`, same names, portrait
+orientation, ≥1050px wide) and nothing else needs touching.
+
+## Copy voice — use HER words
+
+The pull quote in the editorial band is **Sophia's own line**, found nearly
+verbatim in a Shoreline Socials Facebook post:
+
+> "Every small business here has a story worth telling. Most just don't have
+> the time to tell it."
+
+David: *"love it, use her words."* **Standing rule for this site — pull copy
+from what she has already written publicly rather than inventing a voice for
+her.** Her Facebook page and Beyond the Bear Town posts are the source.
