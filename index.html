@@ -110,6 +110,52 @@
   @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
 
   /* ---------- hero ---------- */
+  /* ── EDITORIAL PORTRAITURE (2026-08-17) ──────────────────────────
+     The site had ZERO images — a personal-brand site for a marketer,
+     with no face on it. Fashion-editorial treatment: oversized name,
+     portrait beside it, generous air. Real photos of Sophia, never stock. */
+  .hero-split{
+    display:grid;grid-template-columns:1.05fr .95fr;
+    gap:clamp(2rem,6vw,5rem);align-items:center;
+  }
+  .hero-figure{margin:0;position:relative}
+  .hero-figure img{
+    display:block;width:100%;height:auto;border-radius:2px;
+    aspect-ratio:3/4;object-fit:cover;object-position:50% 20%;
+    box-shadow:0 40px 80px -30px rgba(12,27,42,.38);
+  }
+  .hero-figure::after{
+    content:"";position:absolute;right:-10px;bottom:-10px;width:34%;height:24%;
+    border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);
+    opacity:.6;pointer-events:none;
+  }
+  .hero-figure figcaption{
+    margin-top:.9rem;font-size:.7rem;font-weight:600;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  /* second portrait moment — a full-bleed editorial band */
+  .portrait-band{
+    display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,4.5rem);
+    align-items:center;padding:clamp(3.5rem,8vw,6rem) 0;
+  }
+  .portrait-band img{
+    display:block;width:100%;height:auto;border-radius:2px;
+    aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;
+    box-shadow:0 30px 60px -28px rgba(12,27,42,.32);
+  }
+  .portrait-band .pq{
+    font-family:var(--disp);font-size:clamp(1.6rem,3.4vw,2.6rem);
+    line-height:1.2;color:var(--ink);margin:0;
+  }
+  .portrait-band .pq em{font-style:italic;color:var(--accent)}
+  .portrait-band .pw{color:var(--muted);margin:1.4rem 0 0;max-width:44ch}
+  @media (max-width:860px){
+    .hero-split,.portrait-band{grid-template-columns:1fr;gap:2.4rem}
+    .hero-figure{order:-1;max-width:330px}
+    .hero-figure img{aspect-ratio:1/1;object-position:50% 18%}
+    .hero-figure::after{display:none}
+    .portrait-band img{max-width:330px}
+  }
   .hero{padding:clamp(4.5rem,13vw,9.5rem) 0 clamp(3.5rem,8vw,6rem)}
   .hero .place{
     display:inline-flex;align-items:center;gap:.6rem;color:var(--muted);
@@ -365,6 +411,8 @@
 
 <section class="hero">
   <div class="wrap">
+    <div class="hero-split">
+      <div class="hero-copy">
     <span class="place">New Bern &amp; the Crystal Coast, NC</span>
     <h1>
       <span class="ln">Sophia</span>
@@ -375,6 +423,12 @@
     <div class="hero-actions">
       <a class="call" href="sms:2526709264"><span class="dash"></span> Text (252) 670-9264</a>
       <a class="secondary ul" href="https://shoreline-socials.pages.dev" target="_blank" rel="noopener">See my agency</a>
+    </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="sophia-hero.jpg" width="1050" height="1400" alt="Sophia Varner, founder of Shoreline Socials, New Bern, North Carolina" fetchpriority="high" decoding="async">
+        <figcaption>New Bern, North Carolina</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -438,6 +492,18 @@
     </div>
   </div>
 </section>
+
+  <section class="portrait-sec">
+    <div class="wrap">
+      <div class="portrait-band rv">
+        <img src="sophia-portrait.jpg" width="825" height="1100" alt="Sophia Varner, marketer and content creator based in New Bern, North Carolina" loading="lazy" decoding="async">
+        <div>
+          <p class="pq">Every small business here has a story worth telling. Most just <em>don't have the time</em> to tell it.</p>
+          <p class="pw">That is the whole job. I sit down with owners, find the thing that makes them different, and put it somewhere people will actually see it — social, brand, print, web. No jargon, no lock-in, and no twelve-month contract before you know whether it works.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <section id="ventures">
   <div class="wrap">
