@@ -123,6 +123,26 @@ h1{font-size:clamp(2.6rem,8.5vw,5.2rem)}
 .build .meta{display:block;margin-top:1rem;font-size:.9rem;color:var(--muted-ink)}
 .build .meta a{color:var(--primary)}
 
+/* ── selected work: photos big and square-cornered, clients as ruled rows ── */
+.work-grid{display:grid;gap:1rem;margin-top:.4rem}
+@media (min-width:620px){.work-grid{grid-template-columns:repeat(2,1fr);gap:1.2rem}}
+@media (min-width:1000px){.work-grid{grid-template-columns:repeat(4,1fr)}}
+.work-grid figure{margin:0}
+.work-grid img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;
+  border-radius:0;box-shadow:none;filter:saturate(1.04) sepia(.06) contrast(1.02)}
+.work-grid figcaption{margin-top:.55rem;font-size:.82rem;color:var(--muted-ink);letter-spacing:.01em}
+.clients{margin-top:3.2rem;border-top:1px solid var(--rule)}
+.clients article{padding:1.9rem 0;border-bottom:1px solid var(--rule)}
+@media (min-width:820px){
+  .clients article{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:start}
+}
+.clients h3{font-size:clamp(1.4rem,2.9vw,1.85rem);margin-bottom:.3rem}
+.clients .trade{font-size:.9rem;color:var(--muted-ink);margin:0}
+.clients .body{margin:.9rem 0 0}
+@media (min-width:820px){.clients .body{margin:0}}
+.clients .body p{margin:0 0 .9rem}
+.clients .body a{font-size:.95rem}
+
 /* ── about: asymmetric, photo bleeds left ── */
 .about-grid{display:grid;gap:2.6rem}
 @media (min-width:900px){
@@ -173,6 +193,7 @@ footer .ft{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap}
     <nav>
       <a class="u" href="#top">Home</a>
       <a class="u" href="#building">What I do</a>
+      <a class="u" href="#work">Work</a>
       <a class="u" href="#about">About</a>
       <a class="u" href="#follow">Follow</a>
       <a class="u" href="sms:12526709264">Say hi</a>
@@ -225,13 +246,54 @@ footer .ft{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap}
 
   <hr class="rule" />
 
+  <section id="work">
+    <div class="wrap">
+      <div class="col rise">
+        <span class="num">02 — Selected work</span>
+        <h2>Shot, styled and posted for <em>New Bern businesses.</em></h2>
+      </div>
+      <div class="work-grid rise">
+        <figure><img src="work-pretzel.jpg" width="1050" height="1400" loading="lazy" decoding="async" alt="Warm salted pretzel served on a hanging rack, photographed for a restaurant client"><figcaption>Restaurant &middot; menu feature</figcaption></figure>
+        <figure><img src="work-brunch.jpg" width="1050" height="1400" loading="lazy" decoding="async" alt="Waffle with strawberries, banana and toasted almonds, photographed for a brunch menu"><figcaption>Brunch &middot; seasonal menu</figcaption></figure>
+        <figure><img src="work-lab.jpg" width="1050" height="1400" loading="lazy" decoding="async" alt="Black Labrador mix photographed outdoors for a local pet business"><figcaption>Pet business &middot; social</figcaption></figure>
+        <figure><img src="work-dachshund.jpg" width="1400" height="1050" loading="lazy" decoding="async" alt="Long-haired dachshund resting on a sofa, photographed for a local pet business"><figcaption>Pet business &middot; social</figcaption></figure>
+      </div>
+
+      <div class="clients rise">
+        <article>
+          <div><h3>River Dog <em>Plumbing</em></h3><p class="trade">Plumbing, gas &amp; heating</p></div>
+          <div class="body">
+            <p>A father-and-son shop with more than 36 years on the tools, voted Best of the Best three years running. Their promise is two words &mdash; <em>&ldquo;We Show Up!&rdquo;</em> &mdash; and my job is making sure the people who need them can find them.</p>
+            <a class="u" href="https://www.riverdogplumbing.com" target="_blank" rel="noopener">riverdogplumbing.com &rarr;</a>
+          </div>
+        </article>
+        <article>
+          <div><h3>Studio <em>Aquarius</em></h3><p class="trade">Therapeutic massage &amp; myofascial wellness</p></div>
+          <div class="body">
+            <p>A calm, serious bodywork studio in the middle of New Bern. The work is unhurried and the room is quiet &mdash; so the marketing should feel the same way, not shout.</p>
+            <a class="u" href="https://mysite.vagaro.com/studioaquarius" target="_blank" rel="noopener">Book with Studio Aquarius &rarr;</a>
+          </div>
+        </article>
+        <article>
+          <div><h3>McMillan <em>Renovations</em></h3><p class="trade">Licensed electrical &amp; remodeling</p></div>
+          <div class="body">
+            <p>Family-owned, twelve years in, a licensed general contractor and Generac aligned contractor &mdash; and a New Bern Chamber member. Ranked in the Sun Journal&rsquo;s Best of the Best for both electrical and remodeling.</p>
+            <a class="u" href="https://mcmillanrenovations.com" target="_blank" rel="noopener">mcmillanrenovations.com &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule" />
+
   <section id="about" class="about">
     <div class="wrap about-grid">
       <div class="about-shot rise">
         <img src="sophia-portrait.jpg" width="1000" height="1250" alt="Sophia Varner out filming around New Bern." loading="lazy" decoding="async" />
       </div>
       <div class="col rise">
-        <span class="num">02 — About</span>
+        <span class="num">03 — About</span>
         <h2>I'm here for the people who <em>make this town work.</em></h2>
         <p>New Bern is full of small businesses run by owners who are too busy running them to talk
         about them. So I do the talking. I'm out at the shops, the counters, and the corners of this
@@ -250,7 +312,7 @@ footer .ft{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap}
   <section id="follow" class="follow">
     <div class="wrap">
       <div class="col rise">
-        <span class="num">03 — Come hang out</span>
+        <span class="num">04 — Come hang out</span>
         <h2>Come <em>hang out.</em></h2>
         <p>I post the spots worth going to, the owners worth knowing, and the occasional chicken.
         Follow along.</p>
