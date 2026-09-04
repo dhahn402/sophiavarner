@@ -390,6 +390,16 @@
     .rv{opacity:1;transform:none;transition:none}
     *{transition-duration:.01ms !important;animation-duration:.01ms !important}
   }
+
+  /* ---- selected work ---- */
+  #portfolio .grid-work{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+  #portfolio figure{margin:0;position:relative;overflow:hidden;border-radius:10px;background:#0000000d}
+  #portfolio img{display:block;width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s ease}
+  #portfolio figure:hover img{transform:scale(1.04)}
+  #portfolio figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;
+    color:#fff;font-size:13px;letter-spacing:.02em;
+    background:linear-gradient(to top,rgba(0,0,0,.72),rgba(0,0,0,0))}
+  @media (max-width:900px){#portfolio .grid-work{grid-template-columns:repeat(2,1fr)}}
 </style>
     <!-- Microsoft Clarity — free heatmaps + session recordings. Same project as
          the rest of the Hahn network (xnz7h2n7bv), so traffic across all the sites
@@ -404,6 +414,7 @@
     <a href="#top" class="mark">S<em>V</em></a>
     <nav class="nav-links">
       <a href="#work">Work</a>
+      <a href="#portfolio">Portfolio</a>
       <a href="#about">About</a>
       <a href="#ventures">Elsewhere</a>
       <a href="#contact">Contact</a>
@@ -509,6 +520,22 @@
       </div>
     </div>
   </section>
+
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Selected <em>work</em></h2>
+      <p>Shot, styled and posted for New Bern businesses.</p>
+    </div>
+    <div class="grid-work rv">
+      <figure><img src="work-pretzel.jpg" width="1050" height="1400" loading="lazy" decoding="async" alt="Warm salted pretzel served on a hanging rack, photographed for a restaurant client"><figcaption>Restaurant &middot; menu feature</figcaption></figure>
+      <figure><img src="work-brunch.jpg" width="1050" height="1400" loading="lazy" decoding="async" alt="Waffle with strawberries, banana and toasted almonds, photographed for a brunch menu"><figcaption>Brunch &middot; seasonal menu</figcaption></figure>
+      <figure><img src="work-lab.jpg" width="1050" height="1400" loading="lazy" decoding="async" alt="Black Labrador mix photographed outdoors for a local pet business"><figcaption>Pet business &middot; social</figcaption></figure>
+      <figure><img src="work-dachshund.jpg" width="1400" height="1050" loading="lazy" decoding="async" alt="Long-haired dachshund resting on a sofa, photographed for a local pet business"><figcaption>Pet business &middot; social</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <section id="ventures">
   <div class="wrap">
