@@ -24,7 +24,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232C4A43'/%3E%3Ctext x='32' y='45' font-size='34' font-family='Georgia,serif' fill='%23FAF7F2' text-anchor='middle'%3ESV%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Inter+Tight:wght@400;500;600&display=swap" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&amp;family=Inter+Tight:wght@400;500;600&amp;display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&amp;family=Inter+Tight:wght@400;500;600&amp;display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&amp;family=Inter+Tight:wght@400;500;600&amp;display=swap" /></noscript>
 <style>
 :root{
   /* Sophia's palette, 4 Sept 2026. The navy is gone entirely, as she asked. */
@@ -36,7 +38,9 @@
                             the base and she also asked for WCAG AA, which needs
                             4.5:1. This reads as the same colour and passes at 5.1:1. */
   --muted:#8A8F88;       /* captions and labels only */
-  --muted-ink:#6E7570;   /* muted, darkened where it carries real text */
+  --muted-ink:#6A716C;   /* muted, darkened where it carries real text. Her #8A8F88 is
+                            3.1:1 on the base and #6E7570 was 4.42:1 — both short of the
+                            4.5:1 AA she asked for. This is 4.69:1 and keeps the green cast. */
   --rule:rgba(26,31,28,.12);   /* hairline, ink at 12% */
   --disp:"Fraunces",Georgia,"Times New Roman",serif;
   --sans:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -61,6 +65,9 @@ h1,h2,h3{font-family:var(--disp);font-weight:600;letter-spacing:-.02em;line-heig
 h1 em,h2 em,h3 em{font-style:italic;font-weight:500;color:var(--primary)}
 a{color:var(--primary)}
 :focus-visible{outline:2px solid var(--clay-ink);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:-9999px;top:0;z-index:20;background:var(--primary);color:var(--base);
+  padding:.7rem 1.1rem;font-weight:600;text-decoration:none}
+.skip:focus{left:.6rem;top:.6rem}
 
 /* Links: underline draws left to right, 200ms */
 a.u{position:relative;text-decoration:none;padding-bottom:1px}
@@ -187,6 +194,7 @@ footer .ft{display:flex;justify-content:space-between;gap:1.4rem;flex-wrap:wrap}
 </head>
 <body>
 
+<a class="skip" href="#top">Skip to content</a>
 <header>
   <div class="wrap bar">
     <a class="mark" href="#top">Sophia <em>Says</em></a>
