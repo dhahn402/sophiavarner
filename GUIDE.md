@@ -200,3 +200,24 @@ verbatim in a Shoreline Socials Facebook post:
 David: *"love it, use her words."* **Standing rule for this site — pull copy
 from what she has already written publicly rather than inventing a voice for
 her.** Her Facebook page and Beyond the Bear Town posts are the source.
+
+## Clients — current list and one removal (2026-09-08)
+
+**Named on the site:** River Dog Plumbing (riverdogplumbing.com), Studio
+Aquarius LLC (Vagaro booking), McMillan Renovations & Electrical
+(mcmillanrenovations.com), Keller Williams Realty agents, Hahn Technologies
+Corp.
+
+🚫 **Upwind Acres Sailing Charters was REMOVED on 2026-09-08 — Sophia dropped
+them as a client.** Do not re-add it. Verified gone from every repo and from
+sophiavarner.com, shoreline-socials, hahntechcorp.com and
+davidworthingtonhahn.com.
+
+⚠️ **The four photos in "Selected work" are UNCONFIRMED as client work.**
+They were supplied by David on 2026-09-04 (a pretzel, a brunch waffle, and
+two dogs). They were briefly captioned "Restaurant · menu feature" and "Pet
+business · social" — **those attributions were assumed, not confirmed, and
+have been removed.** The section now reads "Recent photography" with neutral
+alt text. Do not label any image with a client name until Sophia confirms
+which client it belongs to. If they turn out to be personal photos rather
+than client work, the gallery should come off entirely.
