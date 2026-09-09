@@ -221,3 +221,22 @@ have been removed.** The section now reads "Recent photography" with neutral
 alt text. Do not label any image with a client name until Sophia confirms
 which client it belongs to. If they turn out to be personal photos rather
 than client work, the gallery should come off entirely.
+
+## Known issue — shorelinesocials.net is down (2026-09-09)
+
+The **Your agency** link in the table above currently returns a **404**, and
+that link is live on sophiavarner.com.
+
+The cause: `shorelinesocials.net` still points at **Wix** (nameservers
+`ns8.wixdns.net` / `ns9.wixdns.net`, Wix servers answering), but the actual
+agency site is built and working on **Cloudflare Pages** at
+`https://shoreline-socials.pages.dev`. The domain was never repointed.
+
+**The fix** is to move the domain off Wix and onto the Cloudflare Pages site
+— either add the custom domain in Cloudflare Pages and change the
+nameservers, or point the DNS at Pages from wherever it is managed. This
+cannot be done from the repo; it needs dashboard access. A DNS backup taken
+2026-08-16 is in the shoreline-socials repo.
+
+Until it is fixed, every visitor who clicks "my marketing agency" on
+sophiavarner.com lands on a 404.
